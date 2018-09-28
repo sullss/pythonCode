@@ -35,18 +35,3 @@ with open(file_path) as file_object:
         continue
         x += 1
 print(phone_msg_list)
-
-#
-# #将所有地址组合好后，放到地址列表内等待查询使用
-# for line in file:
-#     uurl = "http://search.zol.com.cn/s/all.php?kword="+ line  #组合出所有机型的查询地址
-#     try:
-#         phone_FB = getphoneFB(getHtml(uurl))
-#         phone_msg_list.append(phone_FB)
-#     except Exception:
-#         pass
-#     continue
-#
-# print(phone_msg_list)
-
-#使用列表中的地址，依次打开后将指定网页信息爬去下来，并与机型对应成字典
